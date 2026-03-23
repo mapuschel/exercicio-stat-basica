@@ -8,9 +8,13 @@ library(ggplot2)
 library(dplyr)
 
 tabela %>%
-ggplot2::ggplot(aes(x = quantidade, y = fruta)) +
+ggplot2::ggplot(aes(x = quantidade, y = fruta, fill = fruta)) +
   geom_col() +
   theme_light() + theme(text=element_text(size=20)) +
+  scale_fill_manual(values = c("maçã" = "red",
+    "banana" = "yellow", 
+    "uva" = "purple"
+  )) +
   ggtitle("Quantidade de frutas") +
   xlab("Quantidade") + 
   ylab("Fruta")
