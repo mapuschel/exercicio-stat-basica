@@ -29,3 +29,7 @@ tabela %>%
 system("git worktree add https://github.com/mapuschel/exercicio-stat-basica/tree/main experimento")
 
 system("git branch")
+
+system("git branch")
+
+system("git worktree remove https://github.com/mapuschel/exercicio-stat-basica/tree/main experimento")
