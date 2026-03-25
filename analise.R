@@ -22,3 +22,6 @@ ggplot2::ggplot(aes(x = quantidade, y = fruta, fill = fruta)) +
 system("git branch")
 
 system("git checkout -b experimento")
+
+tabela %>% 
+  mutate("onde comprei" = c("feira", "supermercado", "vendinha"))
