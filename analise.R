@@ -25,3 +25,7 @@ system("git checkout -b experimento")
 
 tabela %>% 
   mutate("onde comprei" = c("feira", "supermercado", "vendinha"))
+
+system("git worktree add https://github.com/mapuschel/exercicio-stat-basica/tree/main experimento")
+
+system("git branch")
