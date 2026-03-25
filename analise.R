@@ -19,3 +19,6 @@ ggplot2::ggplot(aes(x = quantidade, y = fruta, fill = fruta)) +
   xlab("Quantidade") + 
   ylab("Fruta")
   
+system("git branch")
+
+system("git checkout -b experimento")
